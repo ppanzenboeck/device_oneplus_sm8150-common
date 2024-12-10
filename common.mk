@@ -10,6 +10,10 @@ DERP_VERSION_APPEND_TIME_OF_DAY=true
 EXTRA_UDFPS_ICONS=true
 TARGET_NOT_USES_BLUR=true
 
+# Remove Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
