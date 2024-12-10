@@ -4,6 +4,12 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# DerpFest flags
+# DERP_BUILDTYPE=Official
+DERP_VERSION_APPEND_TIME_OF_DAY=true
+EXTRA_UDFPS_ICONS=true
+TARGET_NOT_USES_BLUR=true
+
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
