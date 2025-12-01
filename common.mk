@@ -397,3 +397,9 @@ $(call inherit-product, vendor/oneplus/sm8150-common/sm8150-common-vendor.mk)
 # Debloat
 PRODUCT_PACKAGES += \
   RemovePackages
+
+# ViPER4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
+# GameBar Performance Overlay
+$(call inherit-product, packages/apps/GameBar/gamebar.mk)
