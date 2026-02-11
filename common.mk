@@ -4,17 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DERP_VERSION_APPEND_TIME_OF_DAY=true
-EXTRA_UDFPS_ICONS=true
-TARGET_NOT_USES_BLUR=true
-
-# Remove Packages
-PRODUCT_PACKAGES += \
-    RemovePackages
-
-# ViPER4AndroidFX
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
-
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
@@ -403,3 +392,6 @@ $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # GameBar Performance Overlay
 $(call inherit-product, packages/apps/GameBar/gamebar.mk)
+
+DERPFEST_BUILD_TYPE := Official
+#DERP_VERSION_APPEND_TIME_OF_DAY=true
