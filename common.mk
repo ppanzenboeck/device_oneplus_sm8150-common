@@ -382,3 +382,7 @@ PRODUCT_PACKAGES += \
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8150-common/sm8150-common-vendor.mk)
+
+# Debloat
+PRODUCT_PACKAGES += \
+  RemovePackages
